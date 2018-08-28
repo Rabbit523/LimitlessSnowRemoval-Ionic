@@ -1,0 +1,665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+/* Begin PBXBuildFile section */
+		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
+		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
+		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
+		3047A5121AB8059700498E2A /* build-debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A50F1AB8059700498E2A /* build-debug.xcconfig */; };
+		3047A5131AB8059700498E2A /* build-release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A5101AB8059700498E2A /* build-release.xcconfig */; };
+		3047A5141AB8059700498E2A /* build.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A5111AB8059700498E2A /* build.xcconfig */; };
+		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
+		15009077AC9945D1B401596F /* CDVFile.m in Sources */ = {isa = PBXBuildFile; fileRef = B0813027E7034A94A8E2A265 /* CDVFile.m */; };
+		2706A0621F9D43C78232DDCB /* CDVLocalFilesystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D34484FD7EA4F70AEA2DE8D /* CDVLocalFilesystem.m */; };
+		F2DD764A634A45C1A9A4DCE4 /* CDVAssetLibraryFilesystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 019DAFB21D614FC8853DC312 /* CDVAssetLibraryFilesystem.m */; };
+		BABC46C8A4014BFD8CB1CAB1 /* CordovaHttpPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FDF1C0FF2244DE8B0B15FF /* CordovaHttpPlugin.m */; };
+		F25C1A0AF65D4CA8A20FEECF /* TextResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4E0970901B493A8326EDDC /* TextResponseSerializer.m */; };
+		1079D669C5754511BEA77123 /* TextRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E486FD7514143AA8FCF1BA4 /* TextRequestSerializer.m */; };
+		7F6B1F19B504408C9A89D096 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 197984A2265A4D2696752AD3 /* AFHTTPSessionManager.m */; };
+		109379DA0D0642A1A10ADCFC /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 53E17C4944BF4E1D94FAD661 /* AFNetworkReachabilityManager.m */; };
+		E3C23302CA364B11B1BC87EE /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6326DFE0CF44D4182585C08 /* AFSecurityPolicy.m */; };
+		4BC07EFC0D104191BD813D4C /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B49A90E633874333AB67E891 /* AFURLRequestSerialization.m */; };
+		03ADAD67E13A47FF92B8EFB9 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 764B92D196774C08ACF2F618 /* AFURLResponseSerialization.m */; };
+		17E5C4F855984A7DBCE1F1C5 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6995012BB5BC432CBFFFDBC6 /* AFURLSessionManager.m */; };
+		88230692D91347C7952A3151 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA5AF1B572A4004988EE28C /* Security.framework */; };
+		07F84963EFB44DDA9728FF87 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A20E02E05241A3B7EBD579 /* SystemConfiguration.framework */; };
+		48FDBD5C57984520BDCBEFD9 /* UIImage+CropScaleOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B0C3A092CB4D8A894C9D07 /* UIImage+CropScaleOrientation.m */; };
+		D9A27A43FE3342249784BAD4 /* CDVCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 4709539CCDB24587B94D5F4C /* CDVCamera.m */; };
+		EC748B65FEBB4DECB23F3607 /* CDVJpegHeaderWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2FC5A14FA0478F97BF3B5F /* CDVJpegHeaderWriter.m */; };
+		E6DE84061757405EA629F85B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 910421BB38954A189530799A /* ImageIO.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		5AC09B21DAFF431697AC9BF9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6891F575A1B4FA6B4E69E1D /* CoreLocation.framework */; };
+		5384BB4B832A454DB42125B8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 859C9E654C844BD19960C85D /* AVFoundation.framework */; };
+		B1F5AD65F88249E1812968C9 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 4488E08A4D5D4569A04979D5 /* CDVDevice.m */; };
+		6A03052033D343C38A0268B5 /* FacebookConnectPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF6C568B680452281A20D13 /* FacebookConnectPlugin.m */; };
+		A996BB199D324987B553417B /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06096B855A14C2EBED01025 /* Bolts.framework */; };
+		3A45A0D136334F13A6E31869 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B93681BF9284390A39C387E /* FBSDKCoreKit.framework */; };
+		0B6AE5B1208F44B3B3C7BCC0 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DE714F2EE941FB8E29DA1A /* FBSDKLoginKit.framework */; };
+		D25B3F1ACD1644E1849227DA /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05D92DB7B02480FA54FDA06 /* FBSDKShareKit.framework */; };
+		445293814CE34B3AA0B9C60F /* GooglePlus.m in Sources */ = {isa = PBXBuildFile; fileRef = E66D6E4F72984BBDB8AFB950 /* GooglePlus.m */; };
+		9EFDC1436B5844CAB8F3410A /* GoogleAppUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADFB858A45A5405CB4691710 /* GoogleAppUtilities.framework */; };
+		5B4C7E75E6864F8FBC83A998 /* GoogleAuthUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BEA907F30E241F7ABCABFBE /* GoogleAuthUtilities.framework */; };
+		DE16F4C6C18C4DCF9C798F38 /* GoogleNetworkingUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C59FFB1D20274B8C92101BDC /* GoogleNetworkingUtilities.framework */; };
+		8298CA6364474660BD30567F /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5212AEE2C4FC419ABBF91587 /* GoogleSignIn.framework */; };
+		AE9449444B5D45F681B74B4A /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF790B799CE400188CE79D0 /* GoogleSymbolUtilities.framework */; };
+		DA744D6FB9E848EAA1646D40 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43960166A30946EFA017D715 /* GoogleUtilities.framework */; };
+		07FFC738F3E54BEA94E7FC51 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE71B96D0D3B4F049E6C4184 /* AddressBook.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		278FB07953714B79BFED0383 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86715B8231304C6F81460F57 /* CoreText.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		7C3F5AA6A06D4E259571E350 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7947564E87264CE0A7E4C717 /* SafariServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		562790DE53AA4F8A8A9552A4 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 911F0F4909F84E3E8E4E31D4 /* libz.tbd */; settings = {ATTRIBUTES = (Weak, ); }; };
+		BCFF3E2F61B6483C933A6463 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DED6D160A0427D86A60184 /* libz.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9C630B55EB3D4D39930DC542 /* Limitless Snow Removal.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = D1B17CE057554800AC4C6DE5 /* Limitless Snow Removal.entitlements */; };
+		AB94EEF70B414BD29AE924A9 /* SpeechRecognition.m in Sources */ = {isa = PBXBuildFile; fileRef = B263B4D5723D4325A142BC5E /* SpeechRecognition.m */; };
+		87236D7839494DB4BF88DBD2 /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7498084CCEB44BC8CE07451 /* Speech.framework */; };
+		E57ED0CE71A145EE9529BB56 /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE92556989640EEA5C4AFAF /* CDVLocation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		301BF534109A57CC0062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		301BF550109A68C00062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Limitless Snow Removal/Images.xcassets"; sourceTree = SOURCE_ROOT; };
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* Limitless Snow Removal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Limitless Snow Removal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
+		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
+		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		302D95EF14D2391D003F00A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		302D95F014D2391D003F00A1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		3047A50F1AB8059700498E2A /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-debug.xcconfig"; path = cordova/build-debug.xcconfig; sourceTree = SOURCE_ROOT; };
+		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = cordova/build-release.xcconfig; sourceTree = SOURCE_ROOT; };
+		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
+		32CA4F630368D1EE00C91783 /* Limitless Snow Removal-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Limitless Snow Removal-Prefix.pch"; sourceTree = "<group>"; };
+		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = "Limitless Snow Removal/CDVLaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
+		8D1107310486CEB800E47090 /* Limitless Snow Removal-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Limitless Snow Removal-Info.plist"; path = "Limitless Snow Removal/Limitless Snow Removal-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
+		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
+		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
+		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "Limitless Snow Removal/config.xml"; sourceTree = "<group>"; };
+		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		B0813027E7034A94A8E2A265 /* CDVFile.m */ = {isa = PBXFileReference; name = "CDVFile.m"; path = "cordova-plugin-file/CDVFile.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		3D34484FD7EA4F70AEA2DE8D /* CDVLocalFilesystem.m */ = {isa = PBXFileReference; name = "CDVLocalFilesystem.m"; path = "cordova-plugin-file/CDVLocalFilesystem.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		019DAFB21D614FC8853DC312 /* CDVAssetLibraryFilesystem.m */ = {isa = PBXFileReference; name = "CDVAssetLibraryFilesystem.m"; path = "cordova-plugin-file/CDVAssetLibraryFilesystem.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		239E82C5540E424CA858A465 /* CDVFile.h */ = {isa = PBXFileReference; name = "CDVFile.h"; path = "cordova-plugin-file/CDVFile.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		28E861E9EE1D47689D77D66C /* CDVLocalFilesystem.h */ = {isa = PBXFileReference; name = "CDVLocalFilesystem.h"; path = "cordova-plugin-file/CDVLocalFilesystem.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B7397CD3DE3C48F18E75F35B /* CDVAssetLibraryFilesystem.h */ = {isa = PBXFileReference; name = "CDVAssetLibraryFilesystem.h"; path = "cordova-plugin-file/CDVAssetLibraryFilesystem.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B1FDF1C0FF2244DE8B0B15FF /* CordovaHttpPlugin.m */ = {isa = PBXFileReference; name = "CordovaHttpPlugin.m"; path = "cordova-plugin-advanced-http/CordovaHttpPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		ED4E0970901B493A8326EDDC /* TextResponseSerializer.m */ = {isa = PBXFileReference; name = "TextResponseSerializer.m"; path = "cordova-plugin-advanced-http/TextResponseSerializer.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		7E486FD7514143AA8FCF1BA4 /* TextRequestSerializer.m */ = {isa = PBXFileReference; name = "TextRequestSerializer.m"; path = "cordova-plugin-advanced-http/TextRequestSerializer.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		197984A2265A4D2696752AD3 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; name = "AFHTTPSessionManager.m"; path = "cordova-plugin-advanced-http/AFHTTPSessionManager.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		53E17C4944BF4E1D94FAD661 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; name = "AFNetworkReachabilityManager.m"; path = "cordova-plugin-advanced-http/AFNetworkReachabilityManager.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		B6326DFE0CF44D4182585C08 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; name = "AFSecurityPolicy.m"; path = "cordova-plugin-advanced-http/AFSecurityPolicy.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		B49A90E633874333AB67E891 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; name = "AFURLRequestSerialization.m"; path = "cordova-plugin-advanced-http/AFURLRequestSerialization.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		764B92D196774C08ACF2F618 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; name = "AFURLResponseSerialization.m"; path = "cordova-plugin-advanced-http/AFURLResponseSerialization.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		6995012BB5BC432CBFFFDBC6 /* AFURLSessionManager.m */ = {isa = PBXFileReference; name = "AFURLSessionManager.m"; path = "cordova-plugin-advanced-http/AFURLSessionManager.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		0A94D2DFBCCC42489C6C8269 /* CordovaHttpPlugin.h */ = {isa = PBXFileReference; name = "CordovaHttpPlugin.h"; path = "cordova-plugin-advanced-http/CordovaHttpPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		54DF48C1639F45B9BAF9DB85 /* TextResponseSerializer.h */ = {isa = PBXFileReference; name = "TextResponseSerializer.h"; path = "cordova-plugin-advanced-http/TextResponseSerializer.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		FCBD3E6B624A49E594BCDD12 /* TextRequestSerializer.h */ = {isa = PBXFileReference; name = "TextRequestSerializer.h"; path = "cordova-plugin-advanced-http/TextRequestSerializer.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C2436FCF9D754D6D94FBF73C /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; name = "AFHTTPSessionManager.h"; path = "cordova-plugin-advanced-http/AFHTTPSessionManager.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		173B50E718AD4FCF84D0876D /* AFNetworking.h */ = {isa = PBXFileReference; name = "AFNetworking.h"; path = "cordova-plugin-advanced-http/AFNetworking.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		7FA59385F69A406D8BE9176B /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; name = "AFNetworkReachabilityManager.h"; path = "cordova-plugin-advanced-http/AFNetworkReachabilityManager.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		22927D8DFCB24A9DA6868DC9 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; name = "AFSecurityPolicy.h"; path = "cordova-plugin-advanced-http/AFSecurityPolicy.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		109D1E6B534141E0A1E32328 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; name = "AFURLRequestSerialization.h"; path = "cordova-plugin-advanced-http/AFURLRequestSerialization.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		52C6577C14FA4BA7B6DD314B /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; name = "AFURLResponseSerialization.h"; path = "cordova-plugin-advanced-http/AFURLResponseSerialization.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		70E6C5F03949449EA9E28C14 /* AFURLSessionManager.h */ = {isa = PBXFileReference; name = "AFURLSessionManager.h"; path = "cordova-plugin-advanced-http/AFURLSessionManager.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		FFA5AF1B572A4004988EE28C /* Security.framework */ = {isa = PBXFileReference; name = "Security.framework"; path = "System/Library/Frameworks/Security.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		22A20E02E05241A3B7EBD579 /* SystemConfiguration.framework */ = {isa = PBXFileReference; name = "SystemConfiguration.framework"; path = "System/Library/Frameworks/SystemConfiguration.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		C4B0C3A092CB4D8A894C9D07 /* UIImage+CropScaleOrientation.m */ = {isa = PBXFileReference; name = "UIImage+CropScaleOrientation.m"; path = "cordova-plugin-camera/UIImage+CropScaleOrientation.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		4709539CCDB24587B94D5F4C /* CDVCamera.m */ = {isa = PBXFileReference; name = "CDVCamera.m"; path = "cordova-plugin-camera/CDVCamera.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		6D2FC5A14FA0478F97BF3B5F /* CDVJpegHeaderWriter.m */ = {isa = PBXFileReference; name = "CDVJpegHeaderWriter.m"; path = "cordova-plugin-camera/CDVJpegHeaderWriter.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		90B372CA0B61448CBC124F19 /* UIImage+CropScaleOrientation.h */ = {isa = PBXFileReference; name = "UIImage+CropScaleOrientation.h"; path = "cordova-plugin-camera/UIImage+CropScaleOrientation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		0FB2DE77922E4009B619CC4E /* CDVCamera.h */ = {isa = PBXFileReference; name = "CDVCamera.h"; path = "cordova-plugin-camera/CDVCamera.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		EA45FD1E063C4A1494E52B09 /* CDVJpegHeaderWriter.h */ = {isa = PBXFileReference; name = "CDVJpegHeaderWriter.h"; path = "cordova-plugin-camera/CDVJpegHeaderWriter.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D01C9EE9F56F4695B7EDA2BF /* CDVExif.h */ = {isa = PBXFileReference; name = "CDVExif.h"; path = "cordova-plugin-camera/CDVExif.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		910421BB38954A189530799A /* ImageIO.framework */ = {isa = PBXFileReference; name = "ImageIO.framework"; path = "System/Library/Frameworks/ImageIO.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		F6891F575A1B4FA6B4E69E1D /* CoreLocation.framework */ = {isa = PBXFileReference; name = "CoreLocation.framework"; path = "System/Library/Frameworks/CoreLocation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		859C9E654C844BD19960C85D /* AVFoundation.framework */ = {isa = PBXFileReference; name = "AVFoundation.framework"; path = "System/Library/Frameworks/AVFoundation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		4488E08A4D5D4569A04979D5 /* CDVDevice.m */ = {isa = PBXFileReference; name = "CDVDevice.m"; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		1D21D486FE16454DB6ECB2BB /* CDVDevice.h */ = {isa = PBXFileReference; name = "CDVDevice.h"; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		9DF6C568B680452281A20D13 /* FacebookConnectPlugin.m */ = {isa = PBXFileReference; name = "FacebookConnectPlugin.m"; path = "cordova-plugin-facebook4/FacebookConnectPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		D7706EDEE6994B84B5E3919B /* FacebookConnectPlugin.h */ = {isa = PBXFileReference; name = "FacebookConnectPlugin.h"; path = "cordova-plugin-facebook4/FacebookConnectPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		E06096B855A14C2EBED01025 /* Bolts.framework */ = {isa = PBXFileReference; name = "Bolts.framework"; path = "Limitless Snow Removal/Plugins/cordova-plugin-facebook4/Bolts.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		4B93681BF9284390A39C387E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; name = "FBSDKCoreKit.framework"; path = "Limitless Snow Removal/Plugins/cordova-plugin-facebook4/FBSDKCoreKit.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		B7DE714F2EE941FB8E29DA1A /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; name = "FBSDKLoginKit.framework"; path = "Limitless Snow Removal/Plugins/cordova-plugin-facebook4/FBSDKLoginKit.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		F05D92DB7B02480FA54FDA06 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; name = "FBSDKShareKit.framework"; path = "Limitless Snow Removal/Plugins/cordova-plugin-facebook4/FBSDKShareKit.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		E66D6E4F72984BBDB8AFB950 /* GooglePlus.m */ = {isa = PBXFileReference; name = "GooglePlus.m"; path = "cordova-plugin-googleplus/GooglePlus.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		F23AB5DE73A346AFBCB95887 /* GooglePlus.h */ = {isa = PBXFileReference; name = "GooglePlus.h"; path = "cordova-plugin-googleplus/GooglePlus.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		ADFB858A45A5405CB4691710 /* GoogleAppUtilities.framework */ = {isa = PBXFileReference; name = "GoogleAppUtilities.framework"; path = "Limitless Snow Removal/Plugins/cordova-plugin-googleplus/GoogleAppUtilities.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		8BEA907F30E241F7ABCABFBE /* GoogleAuthUtilities.framework */ = {isa = PBXFileReference; name = "GoogleAuthUtilities.framework"; path = "Limitless Snow Removal/Plugins/cordova-plugin-googleplus/GoogleAuthUtilities.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		C59FFB1D20274B8C92101BDC /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; name = "GoogleNetworkingUtilities.framework"; path = "Limitless Snow Removal/Plugins/cordova-plugin-googleplus/GoogleNetworkingUtilities.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		5212AEE2C4FC419ABBF91587 /* GoogleSignIn.framework */ = {isa = PBXFileReference; name = "GoogleSignIn.framework"; path = "Limitless Snow Removal/Plugins/cordova-plugin-googleplus/GoogleSignIn.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		4EF790B799CE400188CE79D0 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; name = "GoogleSymbolUtilities.framework"; path = "Limitless Snow Removal/Plugins/cordova-plugin-googleplus/GoogleSymbolUtilities.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		43960166A30946EFA017D715 /* GoogleUtilities.framework */ = {isa = PBXFileReference; name = "GoogleUtilities.framework"; path = "Limitless Snow Removal/Plugins/cordova-plugin-googleplus/GoogleUtilities.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		BE71B96D0D3B4F049E6C4184 /* AddressBook.framework */ = {isa = PBXFileReference; name = "AddressBook.framework"; path = "System/Library/Frameworks/AddressBook.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		86715B8231304C6F81460F57 /* CoreText.framework */ = {isa = PBXFileReference; name = "CoreText.framework"; path = "System/Library/Frameworks/CoreText.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		7947564E87264CE0A7E4C717 /* SafariServices.framework */ = {isa = PBXFileReference; name = "SafariServices.framework"; path = "System/Library/Frameworks/SafariServices.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		911F0F4909F84E3E8E4E31D4 /* libz.tbd */ = {isa = PBXFileReference; name = "libz.tbd"; path = "usr/lib/libz.tbd"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = sourcecode.text-based-dylib-definition; explicitFileType = undefined; includeInIndex = 0; };
+		19DED6D160A0427D86A60184 /* libz.dylib */ = {isa = PBXFileReference; name = "libz.dylib"; path = "usr/lib/libz.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
+		D1B17CE057554800AC4C6DE5 /* Limitless Snow Removal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "Limitless Snow Removal.entitlements"; path = "Limitless Snow Removal.entitlements"; sourceTree = "<group>"; fileEncoding = 4; };
+		B263B4D5723D4325A142BC5E /* SpeechRecognition.m */ = {isa = PBXFileReference; name = "SpeechRecognition.m"; path = "cordova-plugin-speechrecognition/SpeechRecognition.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		71E0BF4BB5C34D779DDA814D /* SpeechRecognition.h */ = {isa = PBXFileReference; name = "SpeechRecognition.h"; path = "cordova-plugin-speechrecognition/SpeechRecognition.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D7498084CCEB44BC8CE07451 /* Speech.framework */ = {isa = PBXFileReference; name = "Speech.framework"; path = "System/Library/Frameworks/Speech.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		4DE92556989640EEA5C4AFAF /* CDVLocation.m */ = {isa = PBXFileReference; name = "CDVLocation.m"; path = "cordova-plugin-geolocation/CDVLocation.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		A267D0FF7226496EA6E6B9EA /* CDVLocation.h */ = {isa = PBXFileReference; name = "CDVLocation.h"; path = "cordova-plugin-geolocation/CDVLocation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				88230692D91347C7952A3151 /* Security.framework in Frameworks */,
+				07F84963EFB44DDA9728FF87 /* SystemConfiguration.framework in Frameworks */,
+				E6DE84061757405EA629F85B /* ImageIO.framework in Frameworks */,
+				5AC09B21DAFF431697AC9BF9 /* CoreLocation.framework in Frameworks */,
+				5384BB4B832A454DB42125B8 /* AVFoundation.framework in Frameworks */,
+				A996BB199D324987B553417B /* Bolts.framework in Frameworks */,
+				3A45A0D136334F13A6E31869 /* FBSDKCoreKit.framework in Frameworks */,
+				0B6AE5B1208F44B3B3C7BCC0 /* FBSDKLoginKit.framework in Frameworks */,
+				D25B3F1ACD1644E1849227DA /* FBSDKShareKit.framework in Frameworks */,
+				9EFDC1436B5844CAB8F3410A /* GoogleAppUtilities.framework in Frameworks */,
+				5B4C7E75E6864F8FBC83A998 /* GoogleAuthUtilities.framework in Frameworks */,
+				DE16F4C6C18C4DCF9C798F38 /* GoogleNetworkingUtilities.framework in Frameworks */,
+				8298CA6364474660BD30567F /* GoogleSignIn.framework in Frameworks */,
+				AE9449444B5D45F681B74B4A /* GoogleSymbolUtilities.framework in Frameworks */,
+				DA744D6FB9E848EAA1646D40 /* GoogleUtilities.framework in Frameworks */,
+				07FFC738F3E54BEA94E7FC51 /* AddressBook.framework in Frameworks */,
+				278FB07953714B79BFED0383 /* CoreText.framework in Frameworks */,
+				7C3F5AA6A06D4E259571E350 /* SafariServices.framework in Frameworks */,
+				562790DE53AA4F8A8A9552A4 /* libz.tbd in Frameworks */,
+				BCFF3E2F61B6483C933A6463 /* libz.dylib in Frameworks */,
+				87236D7839494DB4BF88DBD2 /* Speech.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				302D95EE14D2391D003F00A1 /* MainViewController.h */,
+				302D95EF14D2391D003F00A1 /* MainViewController.m */,
+				302D95F014D2391D003F00A1 /* MainViewController.xib */,
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+			);
+			name = Classes;
+			path = "Limitless Snow Removal/Classes";
+			sourceTree = SOURCE_ROOT;
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Limitless Snow Removal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				EB87FDF41871DAF40020F90C /* config.xml */,
+				EB87FDF31871DA8E0020F90C /* www */,
+				EB87FDF11871DA420020F90C /* Staging */,
+				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				307C750510C5A3420062BCA9 /* Plugins */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Limitless Snow Removal-Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */,
+			);
+			name = "Other Sources";
+			path = "Limitless Snow Removal";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0207DA571B56EA530066E2B4 /* Images.xcassets */,
+				3047A50E1AB8057F00498E2A /* config */,
+				8D1107310486CEB800E47090 /* Limitless Snow Removal-Info.plist */,
+				6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */,
+				D1B17CE057554800AC4C6DE5 /* Limitless Snow Removal.entitlements */,
+			);
+			name = Resources;
+			path = "Limitless Snow Removal/Resources";
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFA5AF1B572A4004988EE28C /* Security.framework */,
+				22A20E02E05241A3B7EBD579 /* SystemConfiguration.framework */,
+				910421BB38954A189530799A /* ImageIO.framework */,
+				F6891F575A1B4FA6B4E69E1D /* CoreLocation.framework */,
+				859C9E654C844BD19960C85D /* AVFoundation.framework */,
+				E06096B855A14C2EBED01025 /* Bolts.framework */,
+				4B93681BF9284390A39C387E /* FBSDKCoreKit.framework */,
+				B7DE714F2EE941FB8E29DA1A /* FBSDKLoginKit.framework */,
+				F05D92DB7B02480FA54FDA06 /* FBSDKShareKit.framework */,
+				ADFB858A45A5405CB4691710 /* GoogleAppUtilities.framework */,
+				8BEA907F30E241F7ABCABFBE /* GoogleAuthUtilities.framework */,
+				C59FFB1D20274B8C92101BDC /* GoogleNetworkingUtilities.framework */,
+				5212AEE2C4FC419ABBF91587 /* GoogleSignIn.framework */,
+				4EF790B799CE400188CE79D0 /* GoogleSymbolUtilities.framework */,
+				43960166A30946EFA017D715 /* GoogleUtilities.framework */,
+				BE71B96D0D3B4F049E6C4184 /* AddressBook.framework */,
+				86715B8231304C6F81460F57 /* CoreText.framework */,
+				7947564E87264CE0A7E4C717 /* SafariServices.framework */,
+				911F0F4909F84E3E8E4E31D4 /* libz.tbd */,
+				19DED6D160A0427D86A60184 /* libz.dylib */,
+				D7498084CCEB44BC8CE07451 /* Speech.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		301BF52E109A57CC0062928A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				301BF535109A57CC0062928A /* libCordova.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3047A50E1AB8057F00498E2A /* config */ = {
+			isa = PBXGroup;
+			children = (
+				3047A50F1AB8059700498E2A /* build-debug.xcconfig */,
+				3047A5101AB8059700498E2A /* build-release.xcconfig */,
+				3047A5111AB8059700498E2A /* build.xcconfig */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		307C750510C5A3420062BCA9 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				B0813027E7034A94A8E2A265 /* CDVFile.m */,
+				3D34484FD7EA4F70AEA2DE8D /* CDVLocalFilesystem.m */,
+				019DAFB21D614FC8853DC312 /* CDVAssetLibraryFilesystem.m */,
+				239E82C5540E424CA858A465 /* CDVFile.h */,
+				28E861E9EE1D47689D77D66C /* CDVLocalFilesystem.h */,
+				B7397CD3DE3C48F18E75F35B /* CDVAssetLibraryFilesystem.h */,
+				B1FDF1C0FF2244DE8B0B15FF /* CordovaHttpPlugin.m */,
+				ED4E0970901B493A8326EDDC /* TextResponseSerializer.m */,
+				7E486FD7514143AA8FCF1BA4 /* TextRequestSerializer.m */,
+				197984A2265A4D2696752AD3 /* AFHTTPSessionManager.m */,
+				53E17C4944BF4E1D94FAD661 /* AFNetworkReachabilityManager.m */,
+				B6326DFE0CF44D4182585C08 /* AFSecurityPolicy.m */,
+				B49A90E633874333AB67E891 /* AFURLRequestSerialization.m */,
+				764B92D196774C08ACF2F618 /* AFURLResponseSerialization.m */,
+				6995012BB5BC432CBFFFDBC6 /* AFURLSessionManager.m */,
+				0A94D2DFBCCC42489C6C8269 /* CordovaHttpPlugin.h */,
+				54DF48C1639F45B9BAF9DB85 /* TextResponseSerializer.h */,
+				FCBD3E6B624A49E594BCDD12 /* TextRequestSerializer.h */,
+				C2436FCF9D754D6D94FBF73C /* AFHTTPSessionManager.h */,
+				173B50E718AD4FCF84D0876D /* AFNetworking.h */,
+				7FA59385F69A406D8BE9176B /* AFNetworkReachabilityManager.h */,
+				22927D8DFCB24A9DA6868DC9 /* AFSecurityPolicy.h */,
+				109D1E6B534141E0A1E32328 /* AFURLRequestSerialization.h */,
+				52C6577C14FA4BA7B6DD314B /* AFURLResponseSerialization.h */,
+				70E6C5F03949449EA9E28C14 /* AFURLSessionManager.h */,
+				C4B0C3A092CB4D8A894C9D07 /* UIImage+CropScaleOrientation.m */,
+				4709539CCDB24587B94D5F4C /* CDVCamera.m */,
+				6D2FC5A14FA0478F97BF3B5F /* CDVJpegHeaderWriter.m */,
+				90B372CA0B61448CBC124F19 /* UIImage+CropScaleOrientation.h */,
+				0FB2DE77922E4009B619CC4E /* CDVCamera.h */,
+				EA45FD1E063C4A1494E52B09 /* CDVJpegHeaderWriter.h */,
+				D01C9EE9F56F4695B7EDA2BF /* CDVExif.h */,
+				4488E08A4D5D4569A04979D5 /* CDVDevice.m */,
+				1D21D486FE16454DB6ECB2BB /* CDVDevice.h */,
+				9DF6C568B680452281A20D13 /* FacebookConnectPlugin.m */,
+				D7706EDEE6994B84B5E3919B /* FacebookConnectPlugin.h */,
+				E66D6E4F72984BBDB8AFB950 /* GooglePlus.m */,
+				F23AB5DE73A346AFBCB95887 /* GooglePlus.h */,
+				B263B4D5723D4325A142BC5E /* SpeechRecognition.m */,
+				71E0BF4BB5C34D779DDA814D /* SpeechRecognition.h */,
+				4DE92556989640EEA5C4AFAF /* CDVLocation.m */,
+				A267D0FF7226496EA6E6B9EA /* CDVLocation.h */,
+			);
+			name = Plugins;
+			path = "Limitless Snow Removal/Plugins";
+			sourceTree = SOURCE_ROOT;
+		};
+		EB87FDF11871DA420020F90C /* Staging */ = {
+			isa = PBXGroup;
+			children = (
+				F840E1F0165FE0F500CFE078 /* config.xml */,
+				301BF56E109A69640062928A /* www */,
+			);
+			name = Staging;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Limitless Snow Removal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Limitless Snow Removal" */;
+			buildPhases = (
+				304B58A110DAC018002A0835 /* Copy www directory */,
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				301BF551109A68C00062928A /* PBXTargetDependency */,
+			);
+			name = "Limitless Snow Removal";
+			productName = "Limitless Snow Removal";
+			productReference = 1D6058910D05DD3D006BFB54 /* Limitless Snow Removal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 510;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "__NON-CLI__" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 301BF52E109A57CC0062928A /* Products */;
+					ProjectRef = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Limitless Snow Removal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		301BF535109A57CC0062928A /* libCordova.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCordova.a;
+			remoteRef = 301BF534109A57CC0062928A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
+				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
+				6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */,
+				9C630B55EB3D4D39930DC542 /* Limitless Snow Removal.entitlements in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		304B58A110DAC018002A0835 /* Copy www directory */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy www directory";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "NODEJS_PATH=/usr/local/bin; NVM_NODE_PATH=~/.nvm/versions/node/`nvm version 2>/dev/null`/bin; N_NODE_PATH=`find /usr/local/n/versions/node/* -maxdepth 0 -type d 2>/dev/null | tail -1`/bin; XCODE_NODE_PATH=`xcode-select --print-path`/usr/share/xcs/Node/bin; PATH=$NODEJS_PATH:$NVM_NODE_PATH:$N_NODE_PATH:$XCODE_NODE_PATH:$PATH && node cordova/lib/copy-www-build-step.js";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				15009077AC9945D1B401596F /* CDVFile.m in Sources */,
+				2706A0621F9D43C78232DDCB /* CDVLocalFilesystem.m in Sources */,
+				F2DD764A634A45C1A9A4DCE4 /* CDVAssetLibraryFilesystem.m in Sources */,
+				BABC46C8A4014BFD8CB1CAB1 /* CordovaHttpPlugin.m in Sources */,
+				F25C1A0AF65D4CA8A20FEECF /* TextResponseSerializer.m in Sources */,
+				1079D669C5754511BEA77123 /* TextRequestSerializer.m in Sources */,
+				7F6B1F19B504408C9A89D096 /* AFHTTPSessionManager.m in Sources */,
+				109379DA0D0642A1A10ADCFC /* AFNetworkReachabilityManager.m in Sources */,
+				E3C23302CA364B11B1BC87EE /* AFSecurityPolicy.m in Sources */,
+				4BC07EFC0D104191BD813D4C /* AFURLRequestSerialization.m in Sources */,
+				03ADAD67E13A47FF92B8EFB9 /* AFURLResponseSerialization.m in Sources */,
+				17E5C4F855984A7DBCE1F1C5 /* AFURLSessionManager.m in Sources */,
+				48FDBD5C57984520BDCBEFD9 /* UIImage+CropScaleOrientation.m in Sources */,
+				D9A27A43FE3342249784BAD4 /* CDVCamera.m in Sources */,
+				EC748B65FEBB4DECB23F3607 /* CDVJpegHeaderWriter.m in Sources */,
+				B1F5AD65F88249E1812968C9 /* CDVDevice.m in Sources */,
+				6A03052033D343C38A0268B5 /* FacebookConnectPlugin.m in Sources */,
+				445293814CE34B3AA0B9C60F /* GooglePlus.m in Sources */,
+				AB94EEF70B414BD29AE924A9 /* SpeechRecognition.m in Sources */,
+				E57ED0CE71A145EE9529BB56 /* CDVLocation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		301BF551109A68C00062928A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CordovaLib;
+			targetProxy = 301BF550109A68C00062928A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A50F1AB8059700498E2A /* build-debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Limitless Snow Removal/Limitless Snow Removal-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "Limitless Snow Removal/Limitless Snow Removal-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				PRODUCT_NAME = "Limitless Snow Removal";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"Limitless Snow Removal/Plugins/cordova-plugin-facebook4\"",
+					"\"Limitless Snow Removal/Plugins/cordova-plugin-facebook4\"",
+					"\"Limitless Snow Removal/Plugins/cordova-plugin-facebook4\"",
+					"\"Limitless Snow Removal/Plugins/cordova-plugin-facebook4\"",
+					"\"Limitless Snow Removal/Plugins/cordova-plugin-googleplus\"",
+					"\"Limitless Snow Removal/Plugins/cordova-plugin-googleplus\"",
+					"\"Limitless Snow Removal/Plugins/cordova-plugin-googleplus\"",
+					"\"Limitless Snow Removal/Plugins/cordova-plugin-googleplus\"",
+					"\"Limitless Snow Removal/Plugins/cordova-plugin-googleplus\"",
+					"\"Limitless Snow Removal/Plugins/cordova-plugin-googleplus\"",
+				);
+				CODE_SIGN_ENTITLEMENTS = "Limitless Snow Removal/Resources/Limitless Snow Removal.entitlements";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/Bridging-Header.h";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				SWIFT_VERSION = 3.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5101AB8059700498E2A /* build-release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Limitless Snow Removal/Limitless Snow Removal-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "Limitless Snow Removal/Limitless Snow Removal-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				PRODUCT_NAME = "Limitless Snow Removal";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"Limitless Snow Removal/Plugins/cordova-plugin-facebook4\"",
+					"\"Limitless Snow Removal/Plugins/cordova-plugin-facebook4\"",
+					"\"Limitless Snow Removal/Plugins/cordova-plugin-facebook4\"",
+					"\"Limitless Snow Removal/Plugins/cordova-plugin-facebook4\"",
+					"\"Limitless Snow Removal/Plugins/cordova-plugin-googleplus\"",
+					"\"Limitless Snow Removal/Plugins/cordova-plugin-googleplus\"",
+					"\"Limitless Snow Removal/Plugins/cordova-plugin-googleplus\"",
+					"\"Limitless Snow Removal/Plugins/cordova-plugin-googleplus\"",
+					"\"Limitless Snow Removal/Plugins/cordova-plugin-googleplus\"",
+					"\"Limitless Snow Removal/Plugins/cordova-plugin-googleplus\"",
+				);
+				CODE_SIGN_ENTITLEMENTS = "Limitless Snow Removal/Resources/Limitless Snow Removal.entitlements";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/Bridging-Header.h";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				CODE_SIGN_ENTITLEMENTS = "Limitless Snow Removal/Resources/Limitless Snow Removal.entitlements";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/Bridging-Header.h";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				SWIFT_VERSION = 3.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				CODE_SIGN_ENTITLEMENTS = "Limitless Snow Removal/Resources/Limitless Snow Removal.entitlements";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/Bridging-Header.h";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Limitless Snow Removal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "__NON-CLI__" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

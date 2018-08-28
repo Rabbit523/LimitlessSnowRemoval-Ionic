@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="arrow-back"></ion-icon>
+    </button>
+    <ion-title>Input Information</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <button ion-button (click)="onUsingMap()" input-addr-top-btn>
+      <ion-icon name="globe" style="font-size:18px; padding-right:10px;"></ion-icon>Using Map</button>
+    <button ion-button (click)="onAcceptAddress()" input-addr-top-btn>
+      <ion-icon name="checkmark-circle-outline" style="font-size:18px; padding-right:10px;"></ion-icon>Accept</button>
+    <ion-list>
+      <ion-item>
+        <ion-label fixed>Street</ion-label>
+        <ion-input type="text" [(ngModel)]="addr.street" value=""></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label fixed>State</ion-label>
+          <ion-input type="text" [(ngModel)]="addr.state" value="" readonly></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label fixed>City</ion-label>
+          <ion-input type="text" [(ngModel)]="addr.city" value="" readonly></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label fixed>Country</ion-label>
+          <ion-input type="text" [(ngModel)]="addr.country" value="" readonly></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label fixed>Zipcode</ion-label>
+          <ion-input type="text" [(ngModel)]="addr.zipcode" value="" readonly></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label fixed>Weather</ion-label>
+        <ion-input type="text" [(ngModel)]="addr.weather" value="" readonly></ion-input>
+      </ion-item>
+      
+      <ion-item>
+          <ion-label fixed>Tag</ion-label>
+          <ion-input type="text" [(ngModel)]="addr.tag" value=""></ion-input>
+      </ion-item>
+    
+    </ion-list>    
+</ion-content>

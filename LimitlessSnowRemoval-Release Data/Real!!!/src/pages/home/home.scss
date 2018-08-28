@@ -1,0 +1,190 @@
+page-home {
+  .platform-browser .toolbar-background {
+    background-color: #0b9444;    
+  }
+  .platform-browser .toolbar-title.toolbar-title-md, 
+  .platform-browser .toolbar-title.toolbar-title-ios, 
+  .platform-browser .toolbar-title.toolbar-title-wp { 
+    color: white;  
+    text-transform: uppercase;
+  }
+  ion-header ion-icon .platform-browser .back-button-icon.icon {
+    color: white;
+    font-size: larger;
+  }
+  .platform-browser .back-button-md,
+  .platform-browser .back-button-ios {
+    color: white;
+    font-size: medium;
+  }
+  .platform-browser .button-ios {
+    border-radius: 4px;
+    height: 2.0em;
+    font-size: 2.3rem;
+    color: #0b9444;
+    width: 32%;
+    background: transparent;
+    margin: 0;
+  }
+  .platform-browser .button-ios.activated {
+    color: white;
+    background: #0b9444;
+  }  
+  .platform-browser .bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default {
+    color: white;
+    background-color: transparent;
+  }
+  .platform-browser button ion-icon {
+      font-size: 35px;
+  }   
+  .platform-browser .item-ios [item-right], .item-ios [item-end] {
+    margin: 0px !important;
+  }
+  ion-buttons, .platform-browser .bar-button-ios {
+    padding: 0px !important; 
+    margin-right: 5px;
+  }
+
+  .platform-android .toolbar-background {
+    background-color: #0b9444;    
+  }
+  .platform-android .toolbar-title.toolbar-title-md, 
+  .platform-android .toolbar-title.toolbar-title-ios, 
+  .platform-android .toolbar-title.toolbar-title-wp { 
+    color: white;  
+    text-transform: uppercase;
+  }
+  ion-header ion-icon .platform-android .back-button-icon.icon {
+    color: white;
+    font-size: larger;
+  }
+  .platform-android .back-button-md,
+  .platform-android .back-button-ios {
+    color: white;
+    font-size: medium;
+  }
+  .platform-android .button-ios {
+    border-radius: 4px;
+    height: 2.0em;
+    font-size: 2.3rem;
+    color: #0b9444;
+    width: 32%;
+    background: transparent;
+    margin: 0;
+  }
+  .platform-android .button-ios.activated {
+    color: white;
+    background: #0b9444;
+  }  
+  .platform-android .bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default {
+    color: white;
+    background-color: transparent;
+  }
+  .platform-android button ion-icon {
+      font-size: 35px;
+  }   
+  .platform-android .item-ios [item-right], .item-ios [item-end] {
+    margin: 0px !important;
+  }
+  ion-buttons, .platform-android .bar-button-ios {
+    padding: 0px !important; 
+    margin-right: 5px;
+  }
+
+  .platform-ios .toolbar-background {
+    background-color: #0b9444;    
+  }
+  .platform-ios .toolbar-title.toolbar-title-md, 
+  .platform-ios .toolbar-title.toolbar-title-ios, 
+  .platform-ios .toolbar-title.toolbar-title-wp { 
+    color: white;  
+    text-transform: uppercase;
+  }
+  ion-header ion-icon .platform-ios .back-button-icon.icon {
+    color: white;
+    font-size: larger;
+  }
+  .platform-ios .back-button-md,
+  .platform-ios .back-button-ios {
+    color: white;
+    font-size: medium;
+  }
+  .platform-ios .button-ios {
+    border-radius: 4px;
+    height: 2.0em;
+    font-size: 2.3rem;
+    color: #0b9444;
+    width: 32%;
+    background: transparent;
+    margin: 0;
+  }
+  .platform-ios .button-ios.activated {
+    color: white;
+    background: #0b9444;
+  }  
+  .platform-ios .bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default {
+    color: white;
+    background-color: transparent;
+  }
+  .platform-ios button ion-icon {
+      font-size: 35px;
+  }   
+  .platform-ios .item-ios [item-right], .item-ios [item-end] {
+    margin: 0px !important;
+  }
+  ion-buttons, .platform-ios .bar-button-ios {
+    padding: 0px !important; 
+    margin-right: 5px;
+  }
+  .back-button,
+  ion-buttons[end] button ion-icon {
+    color: #fff;
+  }
+  ion-buttons[end] {
+    min-width: 40px;
+  }
+ 
+  ion-buttons[home-btn-group] {
+    position: fixed;
+    bottom: 30px;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+  }
+  button[accept-btn],
+  button[photo-take-btn] {
+    width: 49%;
+    background: white;
+    color: #0b9444;
+    display: inline-block;
+    margin: auto;
+    padding: 0px;
+    border: none;
+    box-shadow: none;
+    height: 80px;
+  }
+  
+  button[accept-btn] {
+    right: 0;
+  }
+  button[photo-take-btn] {
+    left: 0;
+  }
+  
+  ion-buttons[home-btn-group] button:active,
+  ion-buttons[home-btn-group] button:hover,
+  ion-buttons[home-btn-group] button:focus {
+    background:transparent;
+    color: #0b9444;
+  }
+
+  ion-buttons[home-btn-group] button ion-icon {
+    width: 80px;
+    height: 80px;
+    padding: 15px;
+    font-size: 40px;
+    border-radius: 50%;
+    border: 1px solid #0b9444;
+    color: #0b9444;
+  } 
+}

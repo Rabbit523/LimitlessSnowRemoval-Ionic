@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Photo</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="writeText()" [ngClass]="{'hide' : !isShowEdit}">
+        <ion-icon name="logo-angular"></ion-icon>
+      </button>
+      <button ion-button (click)="editClick()" [ngClass]="{'hide' : !isShowEdit}">
+        <ion-icon name="create"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <p align="center">
+      <img src="{{ myphoto }}>" width="500px" [ngClass]="{'hide' : !isSavedImg}"/>
+      <canvas block #imgCanvas width="500px" height="500px" [ngClass]="{'hide' : isSavedImg}"
+          (touchstart)="onMouseDown($event)"
+          (touchend)="onMouseUp($event)"
+          (touchmove)="onMouseMove($event)"></canvas>
+    </p>
+  </ion-item>
+  <ion-buttons [ngClass]="{'hide' : !isCanCheck}" home-btn-group>
+    <button ion-button (click)="photoTake()" photo-take-btn>
+      <ion-icon name="camera"></ion-icon>
+    </button>
+    <button ion-button (click)="onPhotoAccept()" accept-btn>
+      <ion-icon name="checkmark"></ion-icon>
+    </button>
+  </ion-buttons>
+</ion-content>
+

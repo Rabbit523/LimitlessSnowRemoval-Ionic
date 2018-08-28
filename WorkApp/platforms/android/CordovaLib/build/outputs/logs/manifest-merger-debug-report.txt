@@ -1,0 +1,27 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Tasks\2018-5-30-Ionic\WorkApp622\platforms\android\CordovaLib\AndroidManifest.xml:20:1-23:12
+INJECTED from D:\Tasks\2018-5-30-Ionic\WorkApp622\platforms\android\CordovaLib\AndroidManifest.xml:20:1-23:12
+INJECTED from D:\Tasks\2018-5-30-Ionic\WorkApp622\platforms\android\CordovaLib\AndroidManifest.xml:20:1-23:12
+INJECTED from D:\Tasks\2018-5-30-Ionic\WorkApp622\platforms\android\CordovaLib\AndroidManifest.xml:20:1-23:12
+INJECTED from D:\Tasks\2018-5-30-Ionic\WorkApp622\platforms\android\CordovaLib\AndroidManifest.xml:20:1-23:12
+INJECTED from D:\Tasks\2018-5-30-Ionic\WorkApp622\platforms\android\CordovaLib\AndroidManifest.xml:20:1-23:12
+INJECTED from D:\Tasks\2018-5-30-Ionic\WorkApp622\platforms\android\CordovaLib\AndroidManifest.xml:20:1-23:12
+	package
+		ADDED from D:\Tasks\2018-5-30-Ionic\WorkApp622\platforms\android\CordovaLib\AndroidManifest.xml:21:7-35
+		INJECTED from D:\Tasks\2018-5-30-Ionic\WorkApp622\platforms\android\CordovaLib\AndroidManifest.xml
+		INJECTED from D:\Tasks\2018-5-30-Ionic\WorkApp622\platforms\android\CordovaLib\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\Tasks\2018-5-30-Ionic\WorkApp622\platforms\android\CordovaLib\AndroidManifest.xml:21:36-61
+		INJECTED from D:\Tasks\2018-5-30-Ionic\WorkApp622\platforms\android\CordovaLib\AndroidManifest.xml
+		INJECTED from D:\Tasks\2018-5-30-Ionic\WorkApp622\platforms\android\CordovaLib\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Tasks\2018-5-30-Ionic\WorkApp622\platforms\android\CordovaLib\AndroidManifest.xml:20:11-69
+	android:versionCode
+		ADDED from D:\Tasks\2018-5-30-Ionic\WorkApp622\platforms\android\CordovaLib\AndroidManifest.xml:21:62-85
+		INJECTED from D:\Tasks\2018-5-30-Ionic\WorkApp622\platforms\android\CordovaLib\AndroidManifest.xml
+		INJECTED from D:\Tasks\2018-5-30-Ionic\WorkApp622\platforms\android\CordovaLib\AndroidManifest.xml
+uses-sdk
+ADDED from D:\Tasks\2018-5-30-Ionic\WorkApp622\platforms\android\CordovaLib\AndroidManifest.xml:22:5-44
+	android:minSdkVersion
+		ADDED from D:\Tasks\2018-5-30-Ionic\WorkApp622\platforms\android\CordovaLib\AndroidManifest.xml:22:15-41

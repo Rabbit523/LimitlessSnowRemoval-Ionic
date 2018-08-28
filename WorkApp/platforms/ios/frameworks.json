@@ -1,0 +1,13 @@
+{
+    "Security.framework": 2,
+    "SystemConfiguration.framework": 2,
+    "ImageIO.framework": 1,
+    "CoreLocation.framework": 2,
+    "AVFoundation.framework": 1,
+    "AddressBook.framework": 1,
+    "CoreText.framework": 1,
+    "SafariServices.framework": 1,
+    "libz.tbd": 1,
+    "libz.dylib": 1,
+    "Speech.framework": 1
+}

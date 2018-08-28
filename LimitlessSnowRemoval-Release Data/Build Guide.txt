@@ -1,0 +1,44 @@
+0. ionic cordova platform add android
+1. ionic build android
+2. ionic cordova run -l android
+When you press this, you have to select IP address of mine.
+After that, AVD starts.
+3. Close AVD.
+4. Open Memu emulator.
+5. Copy app-debug.apk
+6. Install app-debug.apk in Memu
+7. Open the installed app.
+---------------------------------------------------------Google Plus --------------------------------------------------------
+C:\java\ -> keytool -exportcert -list -v -alias androiddebugkey -keystore C:\Users\Kara\.android\debug.keystore
+A2:46:E3:ED:D1:84:B1:CC:6E:7E:3D:8D:23:38:E5:30:A0:C7:20:82 ---> Debug Version
+Web_application_client_id --> 402830098374-t0grsirtjuot1sluav5p8ofq52u313ht.apps.googleusercontent.com
+Reversed_id: com.googleusercontent.apps.402830098374-qhse3i16clp5bs6v70jtith05fer862v
+Plugin add 
+8. Release APK --> ionic cordova build android --release
+9. Sign APK ---> 
+  keytool -genkey -v -keystore limitless-key.keystore -alias limitless -keyalg RSA -keysize 2048 -validity 10000
+  keytool -exportcert -list -v -alias limitless -keystore limitless-key.keystore
+  40:03:A2:78:13:2F:AC:4C:C2:C1:7A:45:A6:33:C8:05:A3:BF:E8:B3 --> Release Version
+  Register again.
+  jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore limitless-key.keystore  app-release-unsigned.apk limitless
+  C:\Users\Kara\AppData\Local\Android\Sdk\build-tools\26.0.0>zipalign -v 4 D:\Tasks\2018-5-30-Ionic\WorkApp622\app-release-unsigned.apk D:\Tasks\2018-5-30-Ionic\WorkApp622\LimitlessSnowRemoval.apk
+10. Deploy to google play store
+
+
+------------------------------------------------------------Facebook------------------------------------------------------------------
+keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000
+c:\program files\java...\
+keytool  -exportcert -alias androiddebugkey -keystore  C:\Users\Kara\.android\debug.keystore | C:\OpenSSL-Win64\bin\openssl sha1 -binary | C:\OpenSSL-Win64\bin\openssl base64
+keytool  -exportcert -alias androiddebugkey -keystore  D:\Tasks\2018-5-30-Ionic\WorkApp622\debug.keystore | C:\OpenSSL-Win64\bin\openssl sha1 -binary | C:\OpenSSL-Win64\bin\openssl base64
+XHEYDkwYeeauRO/K/FpUQXj2fgU=
+488480031584226 <----- From Facebook
+ionic cordova plugin add cordova-plugin-facebook4 --variable APP_ID="488480031584226" --variable APP_NAME="LimitlessSnowRemoval"
+
+------------------Facebook key hash does not match any stored key hashes-----------------------------------
+Delete any app on the website of Facebook (developers.facebook.com)
+Delete the file debug.keystore under C:\Users\yourUserName\.android
+Generate a new key (by running your app again) ---> !important
+Create a new app on developers.facebook.com and add the new hash key
+Re-run your app
+Succes!
+

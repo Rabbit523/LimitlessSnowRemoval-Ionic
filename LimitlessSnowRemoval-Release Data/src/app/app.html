@@ -1,0 +1,38 @@
+<ion-menu [content]="content" *ngIf="this.global.isShowMenu">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>MENU</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <ion-item >
+          <img src="assets/imgs/logo.png" style="margin-top:15px;padding-right:15px;height:70px;">
+      </ion-item>
+      <button ion-item menuClose (click)="goToList()" *ngIf="!this.global.isSupport">
+        <ion-icon name="images" item-start style="color:#0b9444;"></ion-icon>
+          Photo Library
+      </button>
+      <button ion-item menuClose (click)="goToService()" *ngIf="this.global.isSupport">
+          <ion-icon name="cog" item-start style="color:#0b9444;"></ion-icon>
+            Manage Services
+      </button>
+      <button ion-item menuClose (click)="goToSetting()">
+        <ion-icon name="settings" item-start style="color:#0b9444;"></ion-icon>
+          Setting
+      </button>
+      
+    </ion-list>
+    <ion-footer>
+      <button (click)="logout()" ion-item menuClose>
+        <ion-icon name="log-out" color="danger" item-start></ion-icon>
+          <span style="color:red;">Logout</span> 
+      </button>
+    </ion-footer>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

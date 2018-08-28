@@ -1,0 +1,47 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-advanced-http": {
+      "PACKAGE_NAME": "com.yuri.LimitlessSnowRemoval"
+    },
+    "cordova-plugin-android-permissions": {
+      "PACKAGE_NAME": "com.yuri.LimitlessSnowRemoval"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.yuri.LimitlessSnowRemoval"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.yuri.LimitlessSnowRemoval"
+    },
+    "cordova-plugin-facebook4": {
+      "APP_ID": "214285492726137",
+      "APP_NAME": "WorkApp",
+      "ANDROID_SDK_VERSION": "4.+",
+      "PACKAGE_NAME": "com.yuri.LimitlessSnowRemoval"
+    },
+    "cordova-plugin-googleplus": {
+      "REVERSED_CLIENT_ID": "com.googleusercontent.apps.402830098374-qhse3i16clp5bs6v70jtith05fer862v",
+      "PACKAGE_NAME": "com.ivanov.LimitlessSnowRemoval"
+    },
+    "cordova-plugin-speechrecognition": {
+      "PACKAGE_NAME": "com.ivanov.LimitlessSnowRemoval"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.ivanov.LimitlessSnowRemoval"
+    },
+    "cordova-plugin-advanced-geolocation": {
+      "PACKAGE_NAME": "com.ivanov.LimitlessSnowRemoval"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.yuri.LimitlessSnowRemoval"
+    }
+  }
+}

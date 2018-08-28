@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu" style="color:white;"></ion-icon>
+    </button>
+    <ion-title>Photo library</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="onAddItem()" style="color:white;">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <button ion-button (click)="startListening()" list-top-btn>
+    <ion-icon name="mic" style="font-size:18px; padding-right:10px;"></ion-icon>Search
+  </button>
+
+  <button ion-button (click)="stopListening()" list-top-btn *ngIf="isIos()">
+    <ion-icon name="mic-off" style="font-size:18px;padding-right:10px;"></ion-icon>Stop
+  </button>
+
+  <button ion-button (click)="ShowOriginal()" list-top-btn item-right>
+    <ion-icon name="arrow-round-back" style="font-size:18px;padding-right:10px;"></ion-icon>Back
+  </button>
+  
+  <ion-list >
+    <ion-item value=[item] *ngFor="let item of filters" 
+              (click)="itemTapped($event, item)">
+      <ion-thumbnail item-start>
+        <img src="{{ item.imagepath }}">
+      </ion-thumbnail>
+      <h2>{{item.title}}</h2>
+      <p>{{item.note}}</p>
+      <ion-buttons end item-right btn-trash>
+        <button ion-button clear (click)="onTrash($event, item)">
+          <ion-icon name="trash" item-right></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-item>
+  </ion-list>
+</ion-content>

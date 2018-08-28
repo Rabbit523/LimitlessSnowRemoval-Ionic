@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "870313874706",
+    "firebase_url": "https://limitlesssnowremoval-208506.firebaseio.com",
+    "project_id": "limitlesssnowremoval-208506",
+    "storage_bucket": "limitlesssnowremoval-208506.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:870313874706:android:23330a6e96ef8ded",
+        "android_client_info": {
+          "package_name": "com.yuri.LimitlessSnowRemoval"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "870313874706-rkkf196t7q3g7ma9d0pki903dkoioevv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yuri.LimitlessSnowRemoval",
+            "certificate_hash": "a246e3edd184b1cc6e7e3d8d2338e530a0c72082"
+          }
+        },
+        {
+          "client_id": "870313874706-e2v8mfbrk04ss6dg1085psadkjrnor6v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhTFbuKxDxyJb2bQNDdfKUZTCE4xcdsAg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "870313874706-e2v8mfbrk04ss6dg1085psadkjrnor6v.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "870313874706-p55meqgih9s5j3b69p8e6t9i61h918lo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.yuri.LimitlessSnowRemoval"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

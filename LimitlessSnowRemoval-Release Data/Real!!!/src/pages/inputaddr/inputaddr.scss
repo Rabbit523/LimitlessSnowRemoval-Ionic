@@ -1,0 +1,61 @@
+page-inputaddr {
+  .toolbar-background {
+    background-color: #0b9444;    
+  }
+  .toolbar-title.toolbar-title-md, 
+  .toolbar-title.toolbar-title-ios, 
+  .toolbar-title.toolbar-title-wp { 
+    color: white;  
+    text-transform: uppercase;
+  }
+  ion-header ion-icon.back-button-icon.icon {
+    color: white;
+    font-size: larger;
+  }
+  .back-button-md,
+  .back-button-ios {
+    color: white;
+    font-size: medium;
+  }
+  .menu{
+    color: white;
+  }
+  .search {
+    line-height: 30px;
+    width: 100%;
+    padding-left: 10px;
+    border-left: none;
+    border-top: none;
+  }
+  .button-ios {
+    border-radius: 6px;
+    background: #0b9444;
+    margin: 0;
+  }
+  .button-ios.activated {
+    color: white;
+    background: #0b9444;
+  }
+  .footer {
+    border-top: 1px solid #e4e1e1;
+  }
+  .bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default {
+    color: white;
+    background-color: transparent;
+  }
+  button[input-addr-top-btn] {
+    float:left; 
+    width:50%;
+    background:transparent;
+    color:#0b9444;
+    font-size: 2.0rem;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  button[input-addr-top-btn]:active,
+  button[input-addr-top-btn]:focus,
+  button[input-addr-top-btn]:visited {
+    background: #eee;
+    color: #0b9444;
+  }
+}

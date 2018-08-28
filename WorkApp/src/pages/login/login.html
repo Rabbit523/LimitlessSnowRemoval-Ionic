@@ -1,0 +1,40 @@
+<div id="custom-overlay" [style.display]="splash ? 'flex' : 'none'">
+  <div class="flb">
+    <div class="Aligner-itm Aligner-item-top"></div>
+    <img src="assets/imgs/logo.png">
+    <div class="Aligner-itm Aligner-item-bottom"></div>
+  </div>
+</div>
+
+<ion-content padding style="background-image:url(assets/imgs/back2.png);background-size:cover; height: 100%">
+  <ion-item [ngStyle]="{'background': 'transparent', 'height': imgHeight}">
+      <img src="assets/imgs/logo2.png">
+  </ion-item>
+  <ion-item style="background: rgba(255, 255, 255, 0.6);color: black;">
+    <ion-icon name="mail" item-left primary class="icon" style="color:#0b9444;"></ion-icon>
+    <ion-input type="text" [(ngModel)]="user.email" placeholder="Email"></ion-input>
+  </ion-item>
+
+  <ion-item style="margin-top:15px;background: rgba(255, 255, 255, 0.6);color: black;">
+    <ion-icon name="lock" item-left primary class="icon" style="color:#0b9444;"></ion-icon>
+    <ion-input type="password" [(ngModel)]="user.password" placeholder="Password"></ion-input>
+  </ion-item>
+
+  <div>
+    <button ion-button (click)="login(user)" style="width:100%;margin:auto;margin-top:15px;background-color:#47bff4;height:45px;">Login</button>
+    <button ion-button (click)="signUp()" style="margin:auto;margin-top:10px;margin-bottom:15px;width:100%;height:45px;"color="secondary">Sign Up</button>
+  </div>
+
+  <div style="text-align:center;margin:auto;">
+    <a style="color:white;font-size:25px;">Forgot password?</a>
+  </div>
+
+  <div>
+    <button ion-button color="secondary" icon-right (click)="googleLogin()" style="background:#ff3131;margin:auto;margin-top:15px;margin-bottom:15px;width:100%;height:45px;">
+      <ion-icon name="logo-googleplus" style="color:white;padding-right:7px;"></ion-icon>Login via Google
+    </button>
+    <button ion-button icon-right (click)="facebookLogin()" style="background:#2473ff;margin:auto;width:100%;height:45px;">
+      <ion-icon name="logo-facebook" style="color:white;padding-right:7px;"></ion-icon>Login via Facebook
+    </button>
+  </div>
+</ion-content>

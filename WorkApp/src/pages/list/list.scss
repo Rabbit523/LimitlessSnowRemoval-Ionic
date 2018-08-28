@@ -1,0 +1,73 @@
+page-list  {
+    .toolbar-background {
+      background-color: #0b9444;    
+    }
+    .toolbar-title.toolbar-title-md, 
+    .toolbar-title.toolbar-title-ios, 
+    .toolbar-title.toolbar-title-wp { 
+      color: white;  
+      text-transform: uppercase;
+    }
+    ion-header ion-icon.back-button-icon.icon {
+      color: white;
+      font-size: larger;
+    }
+    .back-button-md,
+    .back-button-ios {
+      color: white;
+      font-size: medium;
+    }
+    .button-ios,
+    .button-md {
+      height: 2.0em;
+      font-size: 2.3rem;
+      color: #0b9444;
+      width: 32%;
+      background: transparent;
+      margin: 0;
+    }
+    .button-ios.activated {
+      color: white;
+      background: #0b9444;
+    }
+    .button-md.activated {
+      color: white;
+      background: #0b9444;
+    }  
+    .bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default {
+      color: white;
+      background-color: transparent;
+    }
+    button ion-icon {
+        font-size: 35px;
+    }
+    .item-ios [item-right], .item-ios [item-end] {
+      margin: 0px !important;
+    }
+    ion-buttons, .bar-button-ios {
+      padding: 0px !important; 
+      margin-right: 5px;
+    }
+    ion-buttons[btn-trash] button:active,
+    ion-buttons[btn-trash] button:hover,
+    ion-buttons[btn-trash] button:focus {
+      background: none;
+      color: #0b9444;
+    }
+}
+  
+.platform-browser {
+  button[list-top-btn] {
+    float:left; 
+    width:50%;
+    font-size: 2.0rem;
+  }
+}
+
+.platform-ios {
+  button[list-top-btn] {
+    float:left; 
+    width:33.333333%;
+    font-size: 2.0rem;
+  }
+}

@@ -1,0 +1,24 @@
+0. Add ionic platform.
+
+1. ionic build android
+2. ionic cordova run -l android
+When you press this, you have to select IP address of mine.
+After that, AVD starts.
+3. Close AVD.
+4. Open Memu emulator.
+5. Copy app-debug.apk
+6. Install app-debug.apk in Memu
+7. Open the installed app.
+https://github.com/rotati/wiki/wiki/Deploy-an-Ionic-Android-app-to-Google-Play-Store
+8. Release APK --> ionic cordova build android --release
+9. Sign APK ---> 
+  keytool -genkey -v -keystore workapp-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000
+  jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore workapp-key.keystore  app-release-unsigned.apk alias_name
+  C:\Users\Kara\AppData\Local\Android\Sdk\build-tools\26.0.0>zipalign -v 4 D:\Tasks\2018-5-30-Ionic\WorkApp622\app-release-unsigned.apk D:\Tasks\2018-5-30-Ionic\WorkApp622\WorkApp-staging.apk
+10. Deploy to google play store
+keytool -exportcert -keystore D:\Tasks\2018-5-30-Ionic\WorkApp622\workapp-key.keystore -list -v
+F5:8C:9E:86:93:AC:6F:46:6F:A3:F9:F2:61:73:66:75:5E:73:18:92
+11. Please write the method how to build it to ios release and deploy to itune.
+
+
+  

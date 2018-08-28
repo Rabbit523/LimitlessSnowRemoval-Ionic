@@ -1,0 +1,14 @@
+{
+  "name": "WorkApp",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  },
+  "proxies": [
+    {
+      "path": "/api/forecast",
+      "proxyUrl": "https://api.darksky.net/forecast/22529da26a830db484b9941df203cc1c"
+    }
+  ]
+}

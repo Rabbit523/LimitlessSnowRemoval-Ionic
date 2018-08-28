@@ -1,0 +1,28 @@
+<ion-content padding style="background-image:url(assets/imgs/back2.png);background-size:cover;">
+  <ion-card style="background:transparent;-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.0);box-shadow: 0 1px 2px rgba(0, 0, 0, 0.0);margin-top: 30%;">
+    <img src="assets/imgs/logo.png">
+  </ion-card>
+  <form [formGroup]="registerForm" style="position:relative;margin-top:25%;">
+    <ion-item style="background-color:rgba(255,255,255,0.6);color:black;">
+      <ion-icon name="mail" item-left primary class="icon" style="color:#0b9444;"></ion-icon>
+      <ion-input formControlName="email" type="email" [(ngModel)]="user.email" placeholder="Email" required></ion-input>
+    </ion-item>
+    <span *ngIf="email.errors" style="color:red;margin-top:-30px;">
+      <span *ngIf="email.hasError(required) && email.touched">
+        <ion-label class="email_error"> Email is required </ion-label>
+      </span>
+      <span *ngIf="email.errors.pattern">
+        <ion-label class="email_error"> Please enter a valid email </ion-label>
+      </span>
+    </span>
+    <ion-item style="margin-top:10px;background-color:rgba(255,255,255,0.6);color:black;">
+      <ion-icon name="lock" item-left primary class="icon" style="color:#0b9444;"></ion-icon>
+      <ion-input type="password" formControlName="password" [(ngModel)]="user.password" placeholder="Password" required></ion-input>
+    </ion-item>
+    <span *ngIf="password.hasError('required') && password.touched">
+      <ion-label style="color:red;margin-top:-30px;position:absolute;right:0;display:table;"> Password is required</ion-label>
+    </span>
+    <button ion-button (click)="register(user)" [disabled]="!registerForm.valid" style="margin-top:15px;margin-bottom:5px;width:100%;" color="secondary">Sign Up</button>
+  </form>
+</ion-content>
+  
